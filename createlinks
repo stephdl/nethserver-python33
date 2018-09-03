@@ -6,7 +6,7 @@ my @templates = qw (
     /etc/profile.d/enableSoftwareCollectionPython.sh
 );
 
-my $event = 'nethserver-rh-python36-update';
+my $event = 'nethserver-python33-update';
 
 event_actions ( $event, 'initialize-default-databases' => '00');
 event_templates($event, @templates);

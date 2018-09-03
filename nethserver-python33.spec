@@ -1,5 +1,5 @@
-Summary: nethserver-rh-python36 is made to ease the installation of rh-python36
-%define name nethserver-rh-python36
+Summary: nethserver-python33 is made to ease the installation of rh-python33
+%define name nethserver-python33
 Name: %{name}
 %define version 0.1.0
 %define release 1
@@ -8,13 +8,13 @@ Release: %{release}%{?dist}
 License: GPL
 Group: development
 Source: %{name}-%{version}.tar.gz
-Requires: rh-python36
+Requires: python33
 BuildRequires: nethserver-devtools
 BuildArch: noarch
 
 %description
 
-nethserver-rh-python36 is made to ease the installation of rh-python36
+nethserver-python33 is made to ease the installation of python33
 
 %changelog
 * Mon Sep 03 2018 stephane de Labrusse <stephdl@de-labrusse.fr>
@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 (cd root   ; find . -depth -print | cpio -dump $RPM_BUILD_ROOT)
 rm -f %{name}-%{version}-%{release}-filelist
 %{genfilelist} \
-    --file /usr/bin/python36 'attr(0750,root,root)' \
+    --file /usr/bin/python33 'attr(0750,root,root)' \
 $RPM_BUILD_ROOT \
 > %{name}-%{version}-%{release}-filelist
 
