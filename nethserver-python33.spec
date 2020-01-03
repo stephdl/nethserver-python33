@@ -16,10 +16,6 @@ BuildArch: noarch
 
 nethserver-python33 is made to ease the installation of python33
 
-%changelog
-* Mon Sep 03 2018 stephane de Labrusse <stephdl@de-labrusse.fr>
-- initial
-
 %prep
 %setup
 
@@ -47,3 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 %doc COPYING
 
+%changelog
+* Mon Sep 03 2018 stephane de Labrusse <stephdl@de-labrusse.fr>
+- initial
